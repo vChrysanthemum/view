@@ -6,6 +6,7 @@ from termcolor import colored
 import readline
 import json
 import os
+import platform
 
 def parse_params(src_params) :
     src_params = src_params.split(' ')
@@ -25,7 +26,10 @@ def quit(params) :
     exit()
 
 def cls(params) :
-    os.system('clear')
+    if 'Windows' ==  platform.system() :
+        os.system('cls')
+    else :
+        os.system('clear')
 
 def print_content(content_id) :
     content = V2exHttpClient.get_content(content_id)
