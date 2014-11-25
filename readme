@@ -3,3 +3,8 @@
 。。。。。。关于怎么用。。。。。
 python cli.py 
 然后看代码。。。。。。。
+
+
+
+termcolor,requests,pyquery这三个库在OSX10.10下都不自带,需要自己单独安装。
+另外我运行之后出来的是>>>
